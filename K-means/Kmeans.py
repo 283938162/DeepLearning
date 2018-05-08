@@ -15,7 +15,8 @@ def kmeans(X, k, maxIt):
 	#  随机初始化k个中心点
 	#  : 所有列都要
 	centroids = dataSet[np.random.randint(numPoints, size = k), :]
-	centroids = dataSet[0:2, :]  # 指定中心点
+	# centroids = dataSet[0:2, :]  # 指定中心点
+
 	# 给最后一列标签列赋值 从1开始  range取前不取后
 	# : 这里是每一行都要
 	centroids[:, -1] = range(1, k + 1)
